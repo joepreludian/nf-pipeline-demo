@@ -7,7 +7,7 @@
   "properties": {
     "greeting": {
       "type": "string",
-      "default": "Default Hello Input",
+      "default": "Hello, world!",
       "description": "Who to greet? Testing"
     }
   },

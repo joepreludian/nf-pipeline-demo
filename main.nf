@@ -8,10 +8,9 @@ process sayHelloPipeline {
     """
     echo 'Hello World --> ${greeting}!';
     df -h;
-    free -m;
     """
 }
 
 workflow {
-    sayHelloPipeline()
+    sayHelloPipeline(params.greeting)
 }
