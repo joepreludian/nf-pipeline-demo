@@ -4,12 +4,25 @@
   "title": "joepreludian/nf-core-test pipeline parameters",
   "description": "Demo Pipeline Workflow",
   "type": "object",
-  "properties": {
-    "greeting": {
-      "type": "string",
-      "default": "Hello, world!",
-      "description": "Who to greet? Testing"
+  "$defs": {
+    "pipeline_params": {
+      "title": "Pipeline Params",
+      "type": "object",
+      "description": "",
+      "default": "",
+      "properties": {
+        "greeting": {
+          "type": "string",
+          "default": "Hello, world!",
+          "description": "Who to greet? Testing"
+        }
+      },
+      "required": ["greeting"]
     }
   },
-  "required": ["greeting"]
+  "allOf": [
+    {
+      "$ref": "#/$defs/pipeline_params"
+    }
+  ]
 }
