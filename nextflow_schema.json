@@ -8,7 +8,7 @@
     "greeting": {
       "type": "string",
       "default": "Default Hello Input",
-      "description": "Who to greet?"
+      "description": "Who to greet? Testing"
     }
   },
   "required": ["greeting"]
